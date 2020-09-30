@@ -1,0 +1,22 @@
+.main-content {
+  .section {
+    button {
+      border: 0;
+      @include btn-styles(15px, 0);
+
+      &.primary {
+        background: $blue-200;
+        background: linear-gradient(150deg, $blue-200, $blue-100);
+        color: $white;
+        @include btn-styles(18px, 4px, false);
+      }
+
+      &.secondary {
+        background: $red;
+        background: linear-gradient(150deg, $blue-200, $red);
+        color: $white;
+        @include btn-styles(18px, 4px);
+      }
+    }
+  }
+}

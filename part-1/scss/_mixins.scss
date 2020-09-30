@@ -1,0 +1,9 @@
+@mixin btn-styles($padding-x, $padding-y, $radius: true) {
+  @if $radius {
+    border-radius: $btn-radius;
+  } @else {
+    border-radius: 0;
+  }
+
+  padding: $padding-y $padding-x;
+}

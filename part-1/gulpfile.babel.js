@@ -20,7 +20,7 @@ export const clean = () => {
 };
 
 export const styles = () => {
-  return src('scss/index.scss')
+  return src('scss/styles.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(sourcemaps.write())
