@@ -1,5 +1,7 @@
 <page>
   <body>
-
+    <block class="Magento\Framework\View\Element\Template" name="page-title" before="-" template="Magento_Base::page-title.phtml" />
+    <block class="Magento\Framework\View\Element\Template" name="content" template="Magento_Base::content.phtml" l />
+    <block class="Magento\Framework\View\Element\Template" name="disclaimer" before="content" template="Magento_Base::disclaimer.phtml" l />
   </body>
 </page>
