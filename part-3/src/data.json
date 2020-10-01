@@ -1,0 +1,42 @@
+{
+  "gardens": {
+    "harvest": {
+      "name": "Harvest Family",
+      "pods": 6,
+      "wattage": 60,
+      "grow_height": 24
+    },
+    "sprout": {
+      "name": "Sprout",
+      "pods": 3,
+      "wattage": 40,
+      "grow_height": 18
+    },
+    "bounty": {
+      "name": "Bounty Family",
+      "pods": 9,
+      "wattage": 60,
+      "grow_height": 36
+    }
+  },
+  "seed_kits": {
+    "gourmet_herbs": {
+      "name": "Italian Gourmet Herbs",
+      "pods": [3, 6, 9],
+      "min_grow_height": 16,
+      "min_wattage": 20
+    },
+    "cherry_tomatoes": {
+      "name": "Red Heirloom Cherry Tomatoes",
+      "pods": [6, 9],
+      "min_grow_height": 24,
+      "min_wattage": 40
+    },
+    "salad_greens": {
+      "name": "Salad Green",
+      "pods": [3, 6],
+      "min_grow_height": 14,
+      "min_wattage": 20
+    }
+  }
+}
