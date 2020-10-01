@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/grid";
 import InputLabel from "@material-ui/core/InputLabel";
+import FormLabel from "@material-ui/core/FormLabel";
 import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
@@ -12,10 +13,14 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   btn: {
-    margin: theme.spacing(1),
+    marginRight: theme.spacing(1),
+  },
+  formLabel: {
+    marginBottom: theme.spacing(2),
   },
   formControl: {
-    margin: theme.spacing(1),
+    marginBottom: theme.spacing(4),
+    marginTop: theme.spacing(1),
     minWidth: "100%",
   },
 }));
@@ -65,6 +70,9 @@ const Form = (props) => {
           </FormControl>
           {userSeedKit && (
             <>
+              <FormLabel component="legend" className={classes.formLabel}>
+                What garden would you like?
+              </FormLabel>
               {userGardens.map((garden, index) => {
                 return (
                   <Button
